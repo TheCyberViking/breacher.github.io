@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Breacher</title>
+<meta name="keywords" content="OSINT, OpenSource Intelligence, Intelligence, CyberViking, Pentesting, Hacking, CyberSecurity, Cyber">
+<meta name="generator" content="GreenTeamSecurity">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Breacher.png" rel="shortcut icon" type="image/x-icon">
+<link href="Breacher.css" rel="stylesheet">
+<link href="Companies.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="transition.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script src="wwb14.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.in',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+});
+</script>
+</head>
+<body>
+<div id="container">
+<div id="wb_Image1" style="position:absolute;left:405px;top:127px;width:175px;height:175px;z-index:2;">
+<img src="images/Breacher.png" id="Image1" alt=""></div>
+<img src="images/img0053.jpg" id="Banner2" alt="Companies" style="border-width:0;position:absolute;left:45px;top:505px;width:204px;height:37px;z-index:3;">
+<img src="images/img0054.jpg" id="Banner3" alt="Companies" style="border-width:0;position:absolute;left:405px;top:322px;width:175px;height:37px;z-index:4;">
+<div id="wb_GoMenu2" style="position:absolute;left:45px;top:551px;width:204px;height:31px;z-index:5;">
+<form id="GoMenu2" role="menu">
+   <select id="GoMenu2_select" name="GoMenu2">
+      <option class="_self" value="#" selected>Companies</option>
+      <option class="_self" value="https://www.sec.gov/edgar/searchedgar/companysearch.html" role="menuitem">US Company Filings</option>
+      <option class="_self" value="https://www.fincen.gov/msb-registrant-search" role="menuitem">MSB Registrant Search</option>
+      <option class="_self" value="https://beta.companieshouse.gov.uk/" role="menuitem">Companies House service</option>
+      <option class="_self" value="http://www.corporateinformation.com/Company-Advanced-Search.aspx" role="menuitem">Corporate Information</option>
+      <option class="_self" value="https://data.occrp.org/sources?collectionsfilter%3Acategory=company&collectionslimit=30&collectionssort=count%3Adesc" role="menuitem">data.occrp.org/sources</option>
+      <option class="_self" value="https://e-justice.europa.eu/content_business_registers_in_member_states-106-en.do" role="menuitem">European e-Justice Portal</option>
+      <option class="_self" value="https://opencorporates.com/" role="menuitem">opencorporates.com</option>
+   </select>
+   <input id="GoMenu2_input" type="button" value="Go" onclick="OnGoMenuFormLink(this.form.GoMenu2)">
+</form>
+</div>
+<img src="images/img0055.jpg" id="Banner4" alt="Employee Reviews" style="border-width:0;position:absolute;left:404px;top:505px;width:187px;height:37px;z-index:6;">
+<div id="wb_GoMenu3" style="position:absolute;left:404px;top:551px;width:187px;height:31px;z-index:7;">
+<form id="GoMenu3" role="menu">
+   <select id="GoMenu3_select" name="GoMenu3">
+      <option class="_self" value="#" selected>Employee Review</option>
+      <option class="_self" value="https://www.kununu.com/" role="menuitem">kununu</option>
+      <option class="_self" value="http://www.jobvoting.de/" role="menuitem">Arbeitgeber Bewertung auf Jobvoting</option>
+      <option class="_self" value="http://www.meinchef.de/" role="menuitem">Chef und Arbeitgeber bewerten auf meinChef.de!</option>
+      <option class="_self" value="https://www.glassdoor.de/" role="menuitem">Glassdoor</option>
+      <option class="_self" value="http://corporates.review/" role="menuitem">Corporates Review</option>
+      <option class="_self" value="http://job-reviews.co.uk/" role="menuitem">Job-Reviews.co.uk</option>
+      <option class="_self" value="http://www.companize.com/" role="menuitem">Companize Jobs · Gehälter · Firmen</option>
+   </select>
+   <input id="GoMenu3_input" type="button" value="Go" onclick="OnGoMenuFormLink(this.form.GoMenu3)">
+</form>
+</div>
+<img src="images/img0056.jpg" id="Banner5" alt="Charities / Non-Profit" style="border-width:0;position:absolute;left:45px;top:685px;width:204px;height:37px;z-index:8;">
+<div id="wb_GoMenu4" style="position:absolute;left:45px;top:731px;width:204px;height:31px;z-index:9;">
+<form id="GoMenu4" role="menu">
+   <select id="GoMenu4_select" name="GoMenu4">
+      <option class="_self" value="#" selected>Charities / Non-Profit</option>
+      <option class=" Foundation Center" value=" Gain Knowledge " role="menuitem">Foundation Data </option>
+      <option class="_self" value="http://give.org/search" role="menuitem">Charity Search - give.org</option>
+      <option class="_self" value="https://apps.irs.gov/app/eos/" role="menuitem">Exempt Organizations Select Check</option>
+      <option class="_self" value="https://www.irs.gov/charities-non-profits/exempt-organizations-select-check" role="menuitem">Charities & Nonprofits - IRS</option>
+      <option class="_self" value="https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=4529" role="menuitem">Charity Navigator</option>
+      <option class="_self" value="https://www.nozasearch.com/" role="menuitem">NOZA – Charitable Donations Database and Prospect Research</option>
+      <option class="https://www.blackbookonline.info/Non-Profits-Public-Records.aspx" value=" Black Book Online" role="menuitem">Non Profit Search </option>
+      <option class="_self" value="https://apps.irs.gov/app/eos/" role="menuitem">IRS Charity Search</option>
+      <option class="_self" value="https://apps.irs.gov/app/eos/" role="menuitem">IRS Charitiies Search</option>
+      <option class="_self" value="https://www.charitynavigator.org/" role="menuitem">Charity Navigator</option>
+      <option class="_self" value="www.guidestar.org/search" role="menuitem">GuideStar</option>
+   </select>
+   <input id="GoMenu4_input" type="button" value="Go" onclick="OnGoMenuFormLink(this.form.GoMenu4)">
+</form>
+</div>
+<img src="images/img0057.jpg" id="Banner6" alt="Stolen Goods" style="border-width:0;position:absolute;left:404px;top:685px;width:187px;height:37px;z-index:10;">
+<div id="wb_GoMenu5" style="position:absolute;left:404px;top:731px;width:187px;height:31px;z-index:11;">
+<form id="GoMenu5" role="menu">
+   <select id="GoMenu5_select" name="GoMenu5">
+      <option class="_self" value="#" selected>Stolen Goods</option>
+      <option class="_self" value="https://www.immobilise.com/" role="menuitem">The National Property Register (UK)</option>
+      <option class="_self" value="https://www.tracechecker.com/" role="menuitem">Tracechecker (USA)</option>
+      <option class="_self" value="http://icom.museum/resources/red-lists-database/" role="menuitem">Red Lists Database (Museum)</option>
+      <option class="_self" value="http://www.gestohlen.org/" role="menuitem">Gestohlen.org</option>
+      <option class="_self" value="http://www.securius.eu/" role="menuitem">Securius.eu Datenbank für sichergestellte Wertgegenstände</option>
+   </select>
+   <input id="GoMenu5_input" type="button" value="Go" onclick="OnGoMenuFormLink(this.form.GoMenu5)">
+</form>
+</div>
+<img src="images/img0058.jpg" id="Banner7" alt="Patent Search" style="border-width:0;position:absolute;left:747px;top:505px;width:177px;height:37px;z-index:12;">
+<div id="wb_GoMenu6" style="position:absolute;left:747px;top:551px;width:177px;height:31px;z-index:13;">
+<form id="GoMenu6" role="menu">
+   <select id="GoMenu6_select" name="GoMenu6">
+      <option class="_self" value="#" selected>Patent Search</option>
+      <option class="_self" value="https://register.dpma.de/DPMAregister/pat/einsteiger" role="menuitem">DPMAregister</option>
+      <option class="_self" value="https://www.dpma.de/" role="menuitem">DPMA Deutsches Patent und Markenamt</option>
+      <option class="_self" value="https://euipo.europa.eu/ohimportal/de/search-availability" role="menuitem">EUIPO Amt der Europäischen Union für geistiges Eigentum</option>
+      <option class="_self" value="http://www.ipr-hub.eu/" role="menuitem">Ipr-hub.eu IPR SME HELPDESK BrandIP Property Rights</option>
+      <option class="_self" value="http://www.markenchk.de/" role="menuitem">Markenchk.de</option>
+      <option class="_self" value="http://www.piznet.de/" role="menuitem">Willkommen im PIZnet</option>
+      <option class="_self" value="https://www.google.de/?tbm=pts&hl=en&gws_rd=cr,ssl&ei=udOSVOa9AY6xaYCkgdAJ" role="menuitem">Google Patent Suche 1</option>
+      <option class="_self" value="https://www.google.de/search?tbm=pts&q=patent&gws_rd=cr&ei=0WU8VtSDD8aPsgHfsYXIAg" role="menuitem">Google Patent Suche 2</option>
+      <option class="_self" value="https://patents.google.com/" role="menuitem">Google Patents Patent Suche 3</option>
+      <option class="_self" value="http://www.wipo.int/designdb/hague/en/" role="menuitem">WIPO Hague Express</option>
+      <option class="_self" value="https://register.epo.org/regviewer?lng=de" role="menuitem">Smart Search</option>
+      <option class="_self" value="https://euipo.europa.eu/eSearch/" role="menuitem">euipo.europa.eu/eSearch/</option>
+      <option class="_self" value="https://www.uspto.gov/" role="menuitem">United States Patent and Trademark Office</option>
+      <option class="_self" value="https://www.gov.uk/search-for-patent" role="menuitem">Search for a patent</option>
+      <option class="_self" value="https://www.j-platpat.inpit.go.jp/web/all/top/BTmTopEnglishPage" role="menuitem">Japan Platform for Patent Information</option>
+      <option class="_self" value="http://trademark-search.marcaria.com/" role="menuitem">International Trademark Search Free Engine</option>
+      <option class="_self" value="http://www.patentgenius.com/" role="menuitem">Patent Genius</option>
+      <option class="_self" value="https://search.creativecommons.org/" role="menuitem">CC Search</option>
+      <option class="_self" value="http://worldwide.espacenet.com/advancedSearch?locale=en_EP" role="menuitem">Espacenet Advanced search</option>
+      <option class="_self" value="Intellectual Property Office" role="menuitem">Intellectual Property Office</option>
+      <option class="_self" value="http://www.inpi.gov.br/" role="menuitem">Instituto Nacional da Propriedade Industrial (BRAZIL)</option>
+   </select>
+   <input id="GoMenu6_input" type="button" value="Go" onclick="OnGoMenuFormLink(this.form.GoMenu6)">
+</form>
+</div>
+<img src="images/img0068.jpg" id="Banner1" alt="Financial" style="border-width:0;position:absolute;left:747px;top:685px;width:177px;height:37px;z-index:14;">
+<div id="wb_GoMenu1" style="position:absolute;left:747px;top:731px;width:177px;height:31px;z-index:15;">
+<form id="GoMenu1" role="menu">
+   <select id="GoMenu1_select" name="GoMenu1">
+      <option class="_self" value="#" selected>Financial</option>
+      <option class="_self" value="https://www.cedar-rose.com/" role="menuitem">https://www.cedar-rose.com/</option>
+      <option class="_self" value="https://www.clarifiedby.com/" role="menuitem">ClarifiedBy</option>
+      <option class="_self" value="https://drimble.nl/bedrijf/" role="menuitem">Drimble (NL)</option>
+      <option class="_self" value="http://www.info-clipper.com/en/" role="menuitem">Info-Clipper</option>
+      <option class="_self" value="http://data.occrp.org/" role="menuitem">Investigative Dashboard Search</option>
+      <option class="_self" value="http://www.kvk.nl/" role="menuitem">Kamer van Koophandel (NL)</option>
+      <option class="_self" value="https://offshoreleaks.icij.org/" role="menuitem">Offshoreleaks</option>
+      <option class="_self" value="https://opencorporates.com/" role="menuitem">OpenCorporates</option>
+      <option class="_self" value="https://orbisdirectory.bvdinfo.com/version-20171213/OrbisDirectory/Companies" role="menuitem">Orbis directory</option>
+      <option class="_self" value="https://trademarks.justia.com/search?q=" role="menuitem">Trademark search (USA)</option>
+      <option class="_self" value="https://x-rates.com/" role="menuitem">X-rates.com</option>
+      <option class="_self" value="https://zaubacorp.com/" role="menuitem">Zaubacorp.com</option>
+      <option class="_self" value="https://c4ads.org" role="menuitem">C4ADS</option>
+      <option class="_self" value="https://rusi.org/expertise/research/centre-financial-crime-and-security-studies" role="menuitem">Centre for Financial Crime & Security</option>
+      <option class="_self" value="http://www.defenddemocracy.org/csif" role="menuitem">FDD Center</option>
+      <option class="_self" value="https://www.icij.org/" role="menuitem">ICIJ</option>
+      <option class="_self" value="http://www.projectfollow.org" role="menuitem">Project Follow</option>
+   </select>
+   <input id="GoMenu1_input" type="button" value="Go" onclick="OnGoMenuFormLink(this.form.GoMenu1)">
+</form>
+</div>
+<img src="images/img0069.jpg" id="Banner8" alt="Government" style="border-width:0;position:absolute;left:404px;top:843px;width:187px;height:37px;z-index:16;">
+<div id="wb_GoMenu7" style="position:absolute;left:404px;top:889px;width:187px;height:31px;z-index:17;">
+<form id="GoMenu7" role="menu">
+   <select id="GoMenu7_select" name="GoMenu7">
+      <option class="_self" value="#" selected>Government</option>
+      <option class="_self" value="https://www.blackbookonline.info/" role="menuitem">Blackbookonline.info (USA) Public Records</option>
+      <option class="_self" value="https://www.canlii.org/" role="menuitem">CanLII (CAN)</option>
+      <option class="_self" value="https://hgr.rechtspraak.nl/#!/zoeken" role="menuitem">Gemeenschap van goederen register (NL)</option>
+      <option class="_self" value="https://kadaster.nl/bagviewer" role="menuitem">Kadaster - Bagviewer (NL)</option>
+      <option class="_self" value="https://lumendatabase.org/" role="menuitem">Lumen</option>
+      <option class="_self" value="https://aad.archives.gov/aad/index.jsp" role="menuitem">National Archives (USA)</option>
+      <option class="_self" value="https://zoek.officielebekendmakingen.nl/" role="menuitem">Officiële bekendmakingen (NL)</option>
+      <option class="_self" value="https://www.passportindex.org/" role="menuitem">Passport index</option>
+      <option class="_self" value="https://www.wikiwand.com/en/Passport_stamp" role="menuitem">Passport stamps</option>
+      <option class="_self" value="http://publicrecords.searchsystems.net/" role="menuitem">PublicRecords</option>
+      <option class="_self" value="http://publicrecords.searchsystems.net/Other_Nations/Europe_Free_Public_Records/Netherlands_Public_Records/" role="menuitem">PublicRecords - Netherlands</option>
+      <option class="_self" value="http://pdokviewer.pdok.nl/" role="menuitem">Publieke Dienstverlening op de kaart (PDOK) (NL)</option>
+      <option class="_self" value="SEC.gov (USA)" role="menuitem">SEC.gov (USA)</option>
+      <option class="_self" value="https://sanctionssearch.ofac.treas.gov/" role="menuitem">OFAC Sanctions Search</option>
+   </select>
+   <input id="GoMenu7_input" type="button" value="Go" onclick="OnGoMenuFormLink(this.form.GoMenu7)">
+</form>
+</div>
+<img src="images/img0070.jpg" id="Banner9" alt="Bribery / Corruption" style="border-width:0;position:absolute;left:45px;top:843px;width:204px;height:37px;z-index:18;">
+<div id="wb_GoMenu8" style="position:absolute;left:45px;top:889px;width:204px;height:31px;z-index:19;">
+<form id="GoMenu8" role="menu">
+   <select id="GoMenu8_select" name="GoMenu8">
+      <option class="_self" value="#" selected>Bribery / Corruption</option>
+      <option class="_self" value="https://www.transparency.org/news/feature/corruption_perceptions_index_2017" role="menuitem">Corruption Perceptions</option>
+      <option class="_self" value="https://www.transparency.org/" role="menuitem">Transparecny International</option>
+      <option class="_self" value="http://kleptocracyinitiative.org/" role="menuitem">Kletpcracy Initiative</option>
+      <option class="_self" value="https://www.globalwitness.org/en/" role="menuitem">Global Witness</option>
+      <option class="_self" value="https://thesentry.org" role="menuitem">The Sentry</option>
+      <option class="_self" value="http://www.jota.info/lavajota/" role="menuitem">Lava Jota Brazillian</option>
+      <option class="_self" value="https://www.oecd.org/corruption/bycountry/" role="menuitem">OECD</option>
+      <option class="_self" value="https://efile.fara.gov/pls/apex/f?p=185:1:::::P1_DISPLAY" role="menuitem">Fara</option>
+      <option class="_self" value="https://www.justice.gov/sites/default/files/criminal-fraud/legacy/2012/11/14/fcpa-english.pdf" role="menuitem">Foreign Corrupt Practices Act</option>
+      <option class="_self" value="https://www.lobbyview.org/query#!/" role="menuitem">Lobby View</option>
+      <option class="_self" value="https://star.worldbank.org/corruption-cases/?db=All" role="menuitem">SWAMP Index</option>
+      <option class="_self" value="https://www.facebook.com/ads/archive/?active_status=all&ad_type=political_and_issue_ads&country=US" role="menuitem">Facebook Ad Archive</option>
+      <option class="_self" value="https://www.occrp.org/en/" role="menuitem">OOCRP</option>
+      <option class="_self" value="https://www.cia.gov/library/publications/resources/world-leaders-1/index.html" role="menuitem">CIA World Leader List</option>
+      <option class="_self" value="https://www.traceinternational.org/trace-matrix#189" role="menuitem">Trace Bribery Risk Matrix</option>
+      <option class="_self" value="http://" role="menuitem">DS Giving </option>
+      <option class="_self" value="http://www.res4dev.com/" role="menuitem">Resources For Development Consulting</option>
+   </select>
+   <input id="GoMenu8_input" type="button" value="Go" onclick="OnGoMenuFormLink(this.form.GoMenu8)">
+</form>
+</div>
+<img src="images/img0071.jpg" id="Banner10" alt="Drug Trade" style="border-width:0;position:absolute;left:747px;top:843px;width:177px;height:37px;z-index:20;">
+<div id="wb_GoMenu9" style="position:absolute;left:747px;top:889px;width:177px;height:31px;z-index:21;">
+<form id="GoMenu9" role="menu">
+   <select id="GoMenu9_select" name="GoMenu9">
+      <option class="_self" value="#" selected>Name Search</option>
+      <option class="_self" value="https://www.state.gov/j/inl/rls/nrcrpt/2017/" role="menuitem">International Narcotics Control Strategy</option>
+      <option class="_self" value="https://ndews.umd.edu/sites/ndews.umd.edu/files/dea-drug-slang-terms-and-code-words-july2018.pdf" role="menuitem">DEA Drug Slang Terms</option>
+      <option class="_self" value="https://www.drugabuse.gov/drugs-abuse/commonly-abused-drugs-charts#pcp" role="menuitem">NH Commonly Abused Drugs</option>
+      <option class="_self" value="https://data.unodc.org/" role="menuitem">UN International Drug Prices</option>
+      <option class="_self" value="https://www.insightcrime.org/" role="menuitem">InSightCrime</option>
+      <option class="_self" value="https://en.wikipedia.org/wiki/List_of_gangs_in_the_United_States" role="menuitem">US Gang List</option>
+      <option class="_self" value="https://www.cia.gov/library/publications/the-world-factbook/fields/2086.html#rs" role="menuitem">CIA Illicit Drugs World Factbook</option>
+      <option class="_self" value="https://www.dea.gov/fugitives/all" role="menuitem">DEA Wanted Fugitives</option>
+      <option class="_self" value="https://www.dea.gov/media-gallery/drug-Images" role="menuitem">DEA Drug Images</option>
+   </select>
+   <input id="GoMenu9_input" type="button" value="Go" onclick="OnGoMenuFormLink(this.form.GoMenu9)">
+</form>
+</div>
+<div id="Html1" style="position:absolute;left:135px;top:179px;width:100px;height:100px;z-index:22">
+<script> 
+    var adfly_id = 4228472; 
+    var popunder_frequency_delay = 0; 
+</script> 
+<script src="https://cdn.adf.ly/js/display.js"></script> </div>
+</div>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:0;vertical-align:top;">
+<ul id="Breadcrumb1">
+<li><a href="http://">Breacher</a></li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1001;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style ="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="">
+<a href="./index.html">Home</a>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">OSINT<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="./People_Tracking.html">People Tracking</a></li>
+<li><a href="./Image_and_Video_Analysis.html">Image and Video Analysis</a></li>
+<li><a href="./Vehicle_Tracking.html">Vehicle Tracking</a></li>
+<li><a href="./Image_and_Video_Analysis.html">Image and Video</a></li>
+<li><a href="./Digital_OSINT.html">Digital OSINT</a></li>
+<li><a href="./Companies.html">Companies</a></li>
+<li><a href="./OnlineTools.html">OnlineTools</a></li>
+<li><a href="./News.html">News</a></li>
+<li><a href="./Location_Based_Intel.html">Location Based</a></li>
+</ul>
+</li>
+<li class="">
+<a href="./Training.html">Training</a>
+</li>
+<li class="">
+<a href="./Research_Topics.html">Research Topics</a>
+</li>
+<li class="">
+<a href="./Sponsor_The_Project.html">Sponsorship</a>
+</li>
+<li class="">
+<a href="./Contact.html">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

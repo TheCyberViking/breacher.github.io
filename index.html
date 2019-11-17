@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Breacher</title>
+<meta name="keywords" content="OSINT, OpenSource Intelligence, Intelligence, CyberViking, Pentesting, Hacking, CyberSecurity, Cyber">
+<meta name="author" content="CyberViking">
+<meta name="generator" content="GreenTeamSecurity">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Breacher.png" rel="shortcut icon" type="image/x-icon">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="Breacher.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="transition.min.js"></script>
+<script src="collapse.min.js"></script>
+<script src="dropdown.min.js"></script>
+<script src="wwb14.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_Heading1').addClass('visibility-hidden');
+   $("a[href*='#intro']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#intro').offset().top }, 600, 'easeOutQuad');
+   });
+   function Heading1Scroll()
+   {
+      var $obj = $("#wb_Heading1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Heading1', 'vanish-in', 100, 1000);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Heading1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Heading1').inViewPort(true))
+   {
+      $('#wb_Heading1').addClass("in-viewport");
+   }
+   Heading1Scroll();
+   $(window).scroll(function(event)
+   {
+      Heading1Scroll();
+   });
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $(document).on('click','.ThemeableMenu1-navbar-collapse.in',function(e)
+   {
+      if ($(e.target).is('a') && ($(e.target).attr('class') != 'dropdown-toggle')) 
+      {
+         $(this).collapse('hide');
+      }
+   });
+   $(window).on('resize', function()
+   {
+      ResponsiveVideo('intro-video');
+   });
+   ResponsiveVideo('intro-video');
+});
+</script>
+</head>
+<body>
+<div id="container">
+
+</div>
+<div id="intro" style="position:relative;text-align:center;width:100%;height:100%;float:left;display:block;z-index:16;">
+<div id="intro-video"><iframe src="https://www.youtube.com/watch?v=ZzT-MfaI-yw?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=ZzT-MfaI-yw" frameborder="0" allowfullscreen></iframe></div>
+<div id="intro-overlay"></div>
+<div id="intro_Container" style="width:970px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Heading1" style="position:absolute;left:176px;top:307px;width:618px;height:57px;z-index:0;">
+<h1 id="Heading1">BREACHER</h1></div>
+<div id="wb_Text1" style="position:absolute;left:228px;top:377px;width:515px;height:23px;text-align:center;z-index:1;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><em>One Stop Shop for Breaking OPSEC</em></span></div>
+<div id="wb_Image1" style="position:absolute;left:372px;top:78px;width:226px;height:226px;z-index:2;">
+<img src="images/Breacher.png" id="Image1" alt=""></div>
+<div id="wb_Text4" style="position:absolute;left:339px;top:533px;width:293px;height:22px;text-align:center;z-index:3;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>SOCIAL MEDIA</strong></span></div>
+<div id="wb_FontAwesomeIcon1" style="position:absolute;left:365px;top:602px;width:16px;height:16px;text-align:center;z-index:4;">
+<a href="https://github.com/TheCyberViking"><div id="FontAwesomeIcon1"><i class="fa fa-github"></i></div></a></div>
+<div id="wb_FontAwesomeIcon2" style="position:absolute;left:415px;top:602px;width:16px;height:16px;text-align:center;z-index:5;">
+<a href="https://twitter.com/TheCyberViking"><div id="FontAwesomeIcon2"><i class="fa fa-twitter"></i></div></a></div>
+<div id="wb_FontAwesomeIcon3" style="position:absolute;left:465px;top:602px;width:16px;height:16px;text-align:center;z-index:6;">
+<a href="https://discord.gg/8J62hU9"><div id="FontAwesomeIcon3"><i class="fa fa-simplybuilt"></i></div></a></div>
+<div id="wb_FontAwesomeIcon4" style="position:absolute;left:515px;top:602px;width:16px;height:16px;text-align:center;z-index:7;">
+<a href="https://www.linkedin.com/company/green-team-security/"><div id="FontAwesomeIcon4"><i class="fa fa-linkedin"></i></div></a></div>
+<div id="wb_FontAwesomeIcon5" style="position:absolute;left:565px;top:602px;width:16px;height:16px;text-align:center;z-index:8;">
+<a href="http://www.greenteamsecurity.ml"><div id="FontAwesomeIcon5"><i class="fa fa-newspaper-o"></i></div></a></div>
+<div id="wb_Text5" style="position:absolute;left:649px;top:533px;width:293px;height:22px;text-align:center;z-index:9;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>ABOUT</strong></span></div>
+<div id="wb_Text2" style="position:absolute;left:18px;top:533px;width:293px;height:22px;text-align:center;z-index:10;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>INFO</strong></span></div>
+<div id="wb_Text3" style="position:absolute;left:18px;top:584px;width:293px;height:57px;text-align:center;z-index:11;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:16px;"><strong>Green Team Security<br>The Royal Republic of Ladonia<br>Email: greenteamsecie@gmail.com</strong></span></div>
+<div id="wb_Text6" style="position:absolute;left:649px;top:584px;width:293px;height:57px;text-align:center;z-index:12;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:16px;"><strong>Developed by CyberViking for use in GreenTeamSecurity Operations and now open to public use</strong></span></div>
+</div>
+</div>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Breadcrumb1" style="display:inline-block;width:100%;z-index:13;vertical-align:top;">
+<ul id="Breadcrumb1">
+<li><a href="http://">BREACHER</a></li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_ThemeableMenu1" style="display:inline-block;width:100%;z-index:1014;">
+<div id="ThemeableMenu1" class="ThemeableMenu1" style ="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ThemeableMenu1-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="ThemeableMenu1-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="">
+<a href="./index.html">Home</a>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">OSINT<b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="./People_Tracking.html">People Tracking</a></li>
+<li><a href="./Image_and_Video_Analysis.html">Image and Video Analysis</a></li>
+<li><a href="./Vehicle_Tracking.html">Vehicle Tracking</a></li>
+<li><a href="./Image_and_Video_Analysis.html">Image and Video</a></li>
+<li><a href="./Digital_OSINT.html">Digital OSINT</a></li>
+<li><a href="./Companies.html">Companies</a></li>
+<li><a href="./OnlineTools.html">OnlineTools</a></li>
+<li><a href="./News.html">News</a></li>
+<li><a href="./Location_Based_Intel.html">Location Based</a></li>
+</ul>
+</li>
+<li class="">
+<a href="./Training.html">Training</a>
+</li>
+<li class="">
+<a href="./Research_Topics.html">Research Topics</a>
+</li>
+<li class="">
+<a href="./Sponsor_The_Project.html">Sponsorship</a>
+</li>
+<li class="">
+<a href="./Contact.html">Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html><script> 
+    var adfly_id = 4228472; 
+    var popunder_frequency_delay = 0; 
+</script> 
+<script src="https://cdn.adf.ly/js/display.js"></script> 
