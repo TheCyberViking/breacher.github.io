@@ -7,7 +7,7 @@ div#container
 }
 body
 {
-   background-color: #000000;
+   background-color: #FFFFFF;
    color: #000000;
    font-family: Arial;
    font-weight: normal;
@@ -168,16 +168,6 @@ body
    -webkit-transition: color 500ms linear 0ms;
    -moz-transition: color 500ms linear 0ms;
    transition: color 500ms linear 0ms;
-}
-#Image1
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
 }
 .ThemeableMenu1 .hide 
 {
@@ -735,3 +725,54 @@ body
    -moz-transition: color 500ms linear 0ms;
    transition: color 500ms linear 0ms;
 }
+<!--
+.style1 {color: #ff0000}
+-->
+body {
+	font-family:	Arial;
+}
+#fullOutput, #shortOutput {
+	margin: 	0 auto;
+	width: 		474px;
+}
+
+#shortOutput {
+	margin-top:0px;
+	margin-bottom: 0px;
+	font-size: 13px;
+}
+
+
+span.center { 
+	text-align:left; 
+	display:block; 
+}
+.previewThumb {
+	position:relative;
+	float:left;
+	clear:left;
+	margin-top:0px;
+	width: 100%;
+}
+.previewThumb img { 
+	width: 200px; 
+	vertical-align:left;
+} 
+.toggle { 
+	width: 100%;
+	height:0px; 
+	position:relative; 
+	float:left;
+}
+#topForm, #header, #footer {
+	width: 			874px;
+	text-align:		left;
+	margin-top:		0px;
+}
+
+a, a:hover, a:visited {
+	color: #ffffff;
+	text-decoration:none;
+}
+a:hover { text-decoration: underline; }
+                        
