@@ -725,9 +725,6 @@ body
    -moz-transition: color 500ms linear 0ms;
    transition: color 500ms linear 0ms;
 }
-<!--
-.style1 {color: #ff0000}
--->
 body {
 	font-family:	Arial;
 }
